@@ -13,14 +13,16 @@ let arrayReverse = numArray.reverse()
 console.log(arrayReverse)
 let arrayJoin = arrayReverse.join('')
 console.log(arrayJoin)
-let parse = parseInt(arrayJoin)
+//let parse = parseInt(arrayJoin) this does NOT let me allow for decimals!
+//console.log(parse)
+let parse = parseFloat(arrayJoin) //this DOES let me account for decimals.
 console.log(parse)
 
 
 
 // moving thought process to function
 
-const reverse = x =>  parseInt(x.toString().split('').reverse().join(''))
+const reverse = x =>  parseFloat(x.toString().split('').reverse().join(''))
 
 console.log(reverse(myNum))
 
